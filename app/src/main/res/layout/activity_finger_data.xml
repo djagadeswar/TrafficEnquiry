@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FingerData">
+
+
+    <EditText
+        android:id="@+id/bike"
+        android:layout_width="305dp"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="none"
+        android:text="Bike Number: AP 31 AR 3149"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <EditText
+        android:id="@+id/Insurence"
+        android:layout_width="305dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/bike"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="none"
+        android:text="Insurence:25/04/2021"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bike" />
+
+    <EditText
+        android:id="@+id/Pollution"
+        android:layout_width="305dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/Insurence"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="none"
+        android:text="Pollution:25/04/2021"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Insurence" />
+
+    <EditText
+        android:id="@+id/RC"
+        android:layout_width="305dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/Pollution"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="none"
+        android:text="RC:25/04/2021"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pollution" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:background="#FFA500"
+        android:ems="10"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RC"
+        app:layout_constraintVertical_bias="0.158" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="148dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/RC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

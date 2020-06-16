@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".policeLogin">
+
+
+    <EditText
+        android:id="@+id/stationCode"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/holo_blue_dark"
+        android:ems="10"
+        android:hint="stationCode"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColor="#F70202"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.279" />
+
+    <EditText
+        android:id="@+id/stationPassword"
+        android:layout_width="288dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/holo_blue_dark"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stationCode"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <Button
+        android:id="@+id/policeLogin"
+        android:layout_width="231dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="8dp"
+        android:text="Login"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stationPassword"
+        app:layout_constraintVertical_bias="0.074" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
